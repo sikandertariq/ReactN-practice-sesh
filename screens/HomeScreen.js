@@ -34,6 +34,33 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text>Go to List </Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        className="bg-blue-500 p-5 m-5 rounded-lg justify-center items-center"
+        title="Go to Counter screen"
+        onPress={() => {
+          navigation.navigate("Counter");
+        }}
+      >
+        <Text>Go to Counter </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        className="bg-blue-500 p-5 m-5 rounded-lg justify-center items-center"
+        title="Go to Color screen"
+        onPress={() => {
+          navigation.navigate("Color");
+        }}
+      >
+        <Text>Go to Color </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        className="bg-blue-500 p-5 m-5 rounded-lg justify-center items-center"
+        title="Go to Color Adjuster screen"
+        onPress={() => {
+          navigation.navigate("Color Adjuster");
+        }}
+      >
+        <Text>Go to Color Adjuster </Text>
+      </TouchableOpacity>
     </View>
   );
 };
