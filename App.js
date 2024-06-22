@@ -11,6 +11,7 @@ import ListScreen from "./screens/ListScreen";
 import CounterScreen from "./screens/CounterScreen";
 import ColorScreen from "./screens/ColorScreen";
 import ColorAdjuster from "./screens/ColorAdjuster";
+import TextScreen from "./screens/TextScreen";
 import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 const Stack = createNativeStackNavigator();
@@ -26,6 +27,7 @@ function App() {
         <Stack.Screen name="Counter" component={CounterScreen} />
         <Stack.Screen name="Color" component={ColorScreen} />
         <Stack.Screen name="Color Adjuster" component={ColorAdjuster} />
+        <Stack.Screen name="Text" component={TextScreen} />
       </Stack.Navigator>
     </NavigationContainer>
     // <SafeAreaView className='flex-1 justify-center  bg-purple-400'>

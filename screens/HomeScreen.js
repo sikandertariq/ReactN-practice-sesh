@@ -61,6 +61,15 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text>Go to Color Adjuster </Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        className="bg-blue-500 p-5 m-5 rounded-lg justify-center items-center"
+        title="Go to Text screen"
+        onPress={() => {
+          navigation.navigate("Text");
+        }}
+      >
+        <Text>Go to Text Screen </Text>
+      </TouchableOpacity>
     </View>
   );
 };
